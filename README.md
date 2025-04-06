@@ -1,5 +1,5 @@
-# React Hello World
+# React Click Counter App
 
 ## Objective:
 
-The goal of this project is to setup a basic react app to render a simple "Hello world!" text, using npm create vite.
+The goal of this project is to build a simple Click Counter application using React, with increase and decrease buttons.
