@@ -18,6 +18,18 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.heading_text {
+  font-size: 2.5em;
+  line-height: 0.5;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,13 +40,15 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .react,
+  .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
 .card {
-  padding: 2em;
+  padding: 4rem;
+  font-size: 2.25em;
 }
 
 .read-the-docs {
