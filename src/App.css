@@ -1,13 +1,44 @@
 #root {
-  max-width: 1280px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+.main_app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.title_div p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #646cff7c;
+  padding-top: 20px;
+}
+
+.list_section {
+  padding: 15px 10px;
+}
+.list_section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.char {
+  color: #f17f04d2;
+}
+
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0.5rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -27,7 +58,61 @@
 
 .heading_text {
   font-size: 2.5em;
-  line-height: 0.5;
+}
+
+.list_container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  border: 2px solid #646cff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.image_div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f0f0f0 4px solid;
+  outline-offset: 4px;
+  outline: 4px solid #f0f0f0;
+  border-radius: 100%;
+  /* background-color: #f0f0f0; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.image_div img {
+  width: 100%;
+  height: auto;
+}
+.image_div img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.text_div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.name,
+.episode {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6f6e6e;
+}
+.name {
+  font-size: 2rem;
+  /* font-weight: 700; */
+  color: #646cff;
 }
 
 @keyframes logo-spin {
@@ -46,11 +131,45 @@
   }
 }
 
-.card {
-  padding: 4rem;
-  font-size: 2.25em;
+@media (max-width: 600px) {
+  .title_div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .list_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .image_div {
+    width: 50px;
+    height: 50px;
+  }
+  .name,
+  .episode {
+    font-size: 1.2rem;
+  }
 }
+@media (max-width: 320px) {
+  .heading_text {
+    font-size: 2rem;
+  }
+  .list_container {
+    padding: 1rem;
+  }
+  .text_div {
+    text-align: center;
+  }
+  .image_div {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline-offset: 4px;
+    outline: 2px solid #f0f0f0;
+  }
 
-.read-the-docs {
-  color: #888;
+  .name,
+  .episode {
+    font-size: 1rem;
+  }
 }
