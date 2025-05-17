@@ -1,7 +1,7 @@
 // import React from "react";
 
 /**
- * Create a reusable list component
+ * Reusable list component
  *
  * @param {item:} - an array of items to be displayed
  * @returns a reusable list component
@@ -15,7 +15,6 @@ export default function ListComponent({ item }) {
 
       <div className="text_div">
         <p className="name">{item.name}</p>
-
         <p className="episode">{item.episode.length} episodes</p>
       </div>
     </div>
