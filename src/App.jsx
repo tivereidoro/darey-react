@@ -2,10 +2,10 @@ import "./App.css";
 import { useEffect, useMemo, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import ListComponent from "./components/ListComponent";
-import LoadingIndicator from "./components/LoadingIndicator";
-import ErrorMessage from "./components/ErrorMessage";
-import Pagination from "./components/Pagination";
-import SearchAndFilter from "./components/SearchAndFilter";
+import LoadingIndicator from "./LoadingIndicator";
+import ErrorMessage from "./ErrorMessage";
+import Pagination from "./Pagination";
+import SearchAndFilter from "./SearchAndFilter";
 
 // Constants
 const API_URL = "https://rickandmortyapi.com/api/character";
